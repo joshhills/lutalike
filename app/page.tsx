@@ -27,7 +27,7 @@ export default function Home() {
 
     const test = async () => {
       const buffer = await getBufferFromUrl(
-        "http://localhost:3000/lutalike/example-raw.dng",
+        "https://project.joshhills.dev/lutalike/example-raw.dng",
       );
 
       exifr.parse(buffer, { tiff: false, xmp: true }).then((output: any) => {
